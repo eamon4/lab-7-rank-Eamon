@@ -38,7 +38,7 @@ Question: Is there a significant difference in pre-talk ranks of Kermit for male
 ```{r}
 
 mwu_kermit <- kermit %>% 
-  wilcox.test(Score.pre ~ Gender, data = .)
+  wilcox.test(Score.pre ~ Gender, data = .) 
 
 mwu_kermit
 
@@ -51,3 +51,17 @@ mwu_kermit
 There was no significant difference in ranks for male and female respondents (W =155.5, p = 0.4, alpha = 0.05)
 
 
+Next question: 
+
+Is there a significant change in Kermit rankings before and after his Bren talk?
+
+```{r}
+#Wilcox and sign rank
+
+#H0: there is not a sgin diff in ranks pre and post talk scores
+wsr_kermit <- wilcox.test(kermit$Score.pre, kermit$Score.post, paired = TRUE) #with paired information
+wsr_kermit
+
+```
+
+There is no significant difference in ranks for pre and post talk Kermit score (stat summary....)
