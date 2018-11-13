@@ -1,0 +1,12 @@
+---
+title: "Lab_7_Kermit"
+author: "Eamon Devlin"
+date: "11/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a comandment from the creator: From now on, all "commits" from this document shall be called "kermits"
