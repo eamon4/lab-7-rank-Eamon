@@ -12,3 +12,22 @@ knitr::opts_chunk$set(echo = TRUE)
 This is a comandment from the creator: From now on, all "commits" from this document shall be called "kermits" -the creator
 
 But are they green????? -You dare defy the creator!!!!!!!! Blasphlamy!
+
+If you are the collaborator:
+-load the tidyverse
+-read the kermit data as 'kermit'
+-make some side-by-side histograms of the Score.pre for all respondents, separated by the Gender column
+
+```{r}
+
+library(tidyverse)
+kermit <- read_csv("kermit.csv")
+
+kermit_hist <- ggplot(kermit, aes(x = Score.pre)) +
+  geom_histogram(bins = 4) +
+  facet_wrap(~Gender)
+
+kermit_hist
+
+```
+
