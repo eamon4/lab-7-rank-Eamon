@@ -10,3 +10,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 This is a comandment from the creator: From now on, all "commits" from this document shall be called "kermits" -the creator
+
+But are they green?????
